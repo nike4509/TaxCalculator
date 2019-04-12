@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#68829E">
+
+    <EditText
+        android:id="@+id/txtmonthsalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your monthly salary"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/btnTaxcalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calculate Tax"
+        android:layout_below="@+id/txtmonthsalary"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20sp"
+        android:background="#505160"
+        android:padding="20sp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/txtDisptax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/btnTaxcalc"
+        android:layout_marginTop="30sp"
+        android:padding="20sp"
+        android:textColor="#FFFFFF"
+        />
+
+</RelativeLayout>
